@@ -1,13 +1,15 @@
 source "https://rubygems.org"
-ruby "3.1.2"
+ruby '3.1.2'
 
 gem 'bootsnap', require: false
+gem 'devise'
 gem 'importmap-rails'
 gem 'jbuilder'
 gem 'puma', '~> 5.0'
 gem 'rails', '~> 7.0.3', '>= 7.0.3.1'
 gem 'sprockets-rails'
 gem 'pg'
+gem 'slim'
 gem 'stimulus-rails'
 gem 'turbo-rails'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
