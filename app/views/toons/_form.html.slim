@@ -1,0 +1,24 @@
+= form_for @toon do |f|
+  - if @toon.errors.any?
+    h2 = "#{pluralize(@toon.errors.count, 'error')}"
+    ul
+      - @toon.errors.each do |error|
+        li = error.full_message
+
+  div
+    = f.label :name, style: "display: block"
+    = f.text_field :name, placeholder: ':name'
+  div
+    = f.label :server, style: "display: block"
+    = f.select :server, options_for_select(REALMS.map { |r| ["#{r['name']} - #{r['type'].upcase}", r["name"].parameterize]})
+  div
+    = f.label :klass, 'Class', style: "display: block"
+    = f.select :klass, options_for_select(["-- Select Class --"] + KLASSES.map { |k| [k['name'], k['name'].parameterize] })
+  div
+    = f.label :primary_spec, style: "display: block"
+    = f.text_field :primary_spec, placeholder: ':primary_spec'
+  div
+    = f.label :secondary_spec, style: "display: block"
+    = f.text_field :secondary_spec, placeholder: ':secondary_spec'
+  br
+  = f.submit

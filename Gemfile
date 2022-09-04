@@ -3,6 +3,7 @@ ruby '3.1.2'
 
 gem 'bootsnap', require: false
 gem 'devise'
+gem 'friendly_id', '~> 5.4.0'
 gem 'importmap-rails'
 gem 'jbuilder'
 gem 'omniauth'

@@ -1,0 +1,100 @@
+-
+  name: Arugal
+  timezone: AEST
+  category: Oceanic
+  type: pvp
+-
+  name: Ashkandi
+  timezone: EDT
+  category: US East
+  type: pve
+-
+  name: Atiesh
+  timezone: PDT
+  category: US West
+  type: pve
+-
+  name: Azuresong
+  timezone: PDT
+  category: US West
+  type: pve
+-
+  name: Benediction
+  timezone: EDT
+  category: US East
+  type: pvp
+-
+  name: Bloodsail Buccaneers
+  timezone: EDT
+  category: US East
+  type: rp
+-
+  name: Earthfury
+  timezone: EDT
+  category: US East
+  type: pvp
+-
+  name: Faerlina
+  timezone: EDT
+  category: US East
+  type: pvp
+-
+  name: Felstriker
+  timezone: AEST
+  category: Oceanic
+  type: pvp
+-
+  name: Grobbulus
+  timezone: PDT
+  category: US West
+  type: pvp-rp
+-
+  name: Mankrik
+  timezone: EDT
+  category: US East
+  type: pve
+-
+  name: Myzrael
+  timezone: PDT
+  category: US West
+  type: pve
+-
+  name: Old Blanchy
+  timezone: PDT
+  category: US West
+  type: pve
+-
+  name: Pagle
+  timezone: EDT
+  category: US East
+  type: pve
+-
+  name: Remulos
+  timezone: AEST
+  category: Oceanic
+  type: pve
+-
+  name: Sulfuras
+  timezone: EDT
+  category: US East
+  type: pvp
+-
+  name: Westfall
+  timezone: EDT
+  category: US East
+  type: pve
+-
+  name: Whitemane
+  timezone: PDT
+  category: US West
+  type: pvp
+-
+  name: Windseeker
+  timezone: EDT
+  category: US East
+  type: pve
+-
+  name: Yojamba
+  timezone: AEST
+  category: Oceanic
+  type: pvp

@@ -10,9 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_03_220643) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_04_014844) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "friendly_id_slugs", force: :cascade do |t|
+    t.string "slug", null: false
+    t.integer "sluggable_id", null: false
+    t.string "sluggable_type", limit: 50
+    t.string "scope"
+    t.datetime "created_at"
+    t.index ["slug", "sluggable_type", "scope"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope", unique: true
+    t.index ["slug", "sluggable_type"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type"
+    t.index ["sluggable_type", "sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_type_and_sluggable_id"
+  end
 
   create_table "players", force: :cascade do |t|
     t.string "name", null: false
@@ -23,6 +34,21 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_03_220643) do
     t.string "type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "toons", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.string "name", null: false
+    t.string "server", null: false
+    t.string "klass", null: false
+    t.string "primary_spec", null: false
+    t.string "secondary_spec"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "slug"
+    t.index ["name", "server", "user_id"], name: "index_toons_on_name_and_server_and_user_id", unique: true
+    t.index ["slug"], name: "index_toons_on_slug", unique: true
+    t.index ["user_id"], name: "index_toons_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -40,4 +66,5 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_03_220643) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "toons", "users"
 end

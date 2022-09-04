@@ -1,1 +1,14 @@
-= @user.inspect
+h1 User Profile 
+code = @user.inspect
+hr/
+h3 Toons 
+table.table
+  thead
+    tr 
+      th Name
+      th Server 
+      th View 
+      th Destroy 
+    tbody
+      = render @toons
+= link_to 'Add Toon', new_toon_url

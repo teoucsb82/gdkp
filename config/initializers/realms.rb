@@ -1,0 +1,1 @@
+REALMS = YAML.load_file("#{Rails.root}/config/data/realms.yml")

@@ -1,0 +1,61 @@
+-
+  name: Death Knight
+  specs:
+    - Blood
+    - Frost
+    - Unholy
+-
+  name: Druid
+  specs:
+    - Balance
+    - Feral
+    - Restoration
+-
+  name: Hunter
+  specs:
+    - Beast Master
+    - Marksmanship
+    - Survival
+-
+  name: Mage
+  specs:
+    - Arcane
+    - Fire
+    - Frost
+-
+  name: Paladin
+  specs:
+    - Holy
+    - Protection
+    - Retribution
+-
+  name: Priest
+  specs:
+    - Discipline
+    - Holy
+    - Shadow
+-
+  name: Rogue
+  specs:
+    - Assassination
+    - Combat
+    - Subtlety
+-
+  name: Shaman
+  specs:
+    - Enhancement
+    - Elemental
+    - Restoration
+-
+  name: Warlock
+  specs:
+    - Affliction
+    - Demonology
+    - Destruction
+-
+  name: Warrior
+  specs:
+    - Arms
+    - Fury
+    - Protection
+       
