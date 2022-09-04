@@ -1,7 +1,6 @@
 h1 pages 
 - if user_signed_in?
-  = link_to 'Sign Out', destroy_user_session_path 
+  = button_to "Log Out", destroy_user_session_path, method: :delete
 - else 
   = link_to 'Sign in', new_user_session_path 
   = link_to 'Sign up', new_user_registration_path 
-  = link_to "Sign in with discord", 'https://discord.com/api/oauth2/authorize?client_id=1008186299519352915&redirect_uri=https%3A%2F%2Fmighty-plateau-94880.herokuapp.com%2Fusers%2Fauth%2Fdiscord%2Fcallback&response_type=code&scope=email'

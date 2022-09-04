@@ -7,6 +7,7 @@ gem 'importmap-rails'
 gem 'jbuilder'
 gem 'omniauth'
 gem 'omniauth-discord'
+gem 'omniauth-rails_csrf_protection'
 gem 'pg'
 gem 'puma', '~> 5.0'
 gem 'rails', '~> 7.0.3', '>= 7.0.3.1'
@@ -18,9 +19,12 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
+  gem 'pry'
 end
 
 group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
   gem 'web-console'
 end
 
