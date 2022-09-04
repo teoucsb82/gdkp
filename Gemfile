@@ -2,10 +2,12 @@ source "https://rubygems.org"
 ruby '3.1.2'
 
 gem 'bootsnap', require: false
+gem 'bootstrap', '~> 5.2.0'
 gem 'devise'
 gem 'friendly_id', '~> 5.4.0'
 gem 'importmap-rails'
 gem 'jbuilder'
+gem 'jquery-rails'
 gem 'omniauth'
 gem 'omniauth-discord'
 gem 'omniauth-rails_csrf_protection'
